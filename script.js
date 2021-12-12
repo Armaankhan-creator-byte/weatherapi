@@ -6,7 +6,7 @@ var showdata=document.querySelector('.showdata');
 
 btn.addEventListener('click',function(){
      value=input_text.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${api_key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${api_key}`)
     .then(res=>res.json())
     .then(data=>{
         //  console.log(data);
